@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+/* general css */
+.text-center {
+  text-align: center;
+}
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.height-100 {
+  height: 100vh;
+}
+.height-90 {
+  height: 90vh;
+}
+.height-80 {
+  height: 80vh;
+}
+.height-70 {
+  height: 70vh;
+}
+.height-60 {
+  height: 60vh;
+}
+.height-50 {
+  height: 50vh;
+}
+.height-40 {
+  height: 40vh;
+}
+.height-30 {
+  height: 30vh;
+}
+.height-20 {
+  height: 20vh;
+}
+.height-10 {
+  height: 10vh;
+}
+.width-100 {
+  width: 100%;
+}
+.width-90 {
+  width: 90%;
+}
+.width-80 {
+  width: 80%;
+}
+.width-70 {
+  width: 70%;
+}
+.width-60 {
+  width: 60%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-40 {
+  width: 40%;
+}
+.width-30 {
+  width: 30%;
+}
+.width-20 {
+  width: 20%;
+}
+.width-10 {
+  width: 10%;
+}
+
+/* end general css */
+.container-1,
+.container-2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-1 {
+  background: url("../../assets/images/city6.jpg");
+}
+.container-2 {
+  background: url("../../assets/images/city5.jpg");
+}
+.container-3 {
+  background: url("../../assets/images/city4.jpg");
+}
+.container-4 {
+  background: url("../../assets/images/city2.jpg");
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  overflow-x: hidden;
+}
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* animation code */
+section .anime {
+  transition: 1s;
+}
+.sec-1 .anime {
+  transform: translateX(-100%);
+}
+.sec-1.show-anime .anime {
+  transform: translateX(0);
+}
+.sec-2 .anime {
+  transform: translateX(100%);
+}
+.sec-2.show-anime .anime {
+  transform: translateX(0);
+}
+.sec-3 .anime {
+  transform: scale(0.5);
+}
+.sec-3.show-anime .anime {
+  transform: scale(1);
+}
+.sec-4 .anime {
+  transform: scale(1.5);
+}
+.sec-4.show-anime .anime {
+  transform: scale(1);
+}
